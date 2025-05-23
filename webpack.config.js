@@ -68,6 +68,11 @@ module.exports = {
     // Resolve file extensions
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.jsx'],
+        fallback: {
+            path: false,
+            os: false,
+            crypto: false,
+        },
     },
 
     // Plugins
